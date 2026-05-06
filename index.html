@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wife Carry Registration</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Wife Carry home">
+        <span class="brand-mark" aria-hidden="true">WC</span>
+        <span>Wife Carry</span>
+      </a>
+      <nav class="site-nav" aria-label="Event navigation">
+        <a href="#registration">Register</a>
+        <a href="#details">Details</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-content">
+          <div class="breadcrumbs">Home / Year-Round Events / Wife Carry</div>
+          <p class="eyebrow">May 10 | Cold Spring Park</p>
+          <h1 id="page-title">FC Nova Wife Carrying Registration</h1>
+          <p class="hero-copy">
+            Carry your teammate through a 278-yard obstacle course and get your
+            race-day paperwork handled before the first heat.
+          </p>
+          <a class="hero-action" href="#registration">Reserve Your Spot</a>
+        </div>
+      </section>
+
+      <section class="event-strip" id="details" aria-label="Event details">
+        <div class="event-fact">
+          <span>Date</span>
+          <strong>May 10th</strong>
+        </div>
+        <div class="event-fact">
+          <span>Time</span>
+          <strong>11:00 AM</strong>
+        </div>
+        <div class="event-fact">
+          <span>Location</span>
+          <strong>Cold Spring Park</strong>
+        </div>
+        <div class="event-fact">
+          <span>Course</span>
+          <strong>278 yards</strong>
+        </div>
+      </section>
+
+      <section class="registration-layout">
+        <section class="registration-panel" id="registration" aria-labelledby="registration-title">
+          <div class="section-heading">
+            <p class="eyebrow">Registration is live</p>
+            <h2 id="registration-title">Team information</h2>
+          </div>
+
+          <form id="registration-form" class="registration-form" novalidate>
+            <div class="field">
+              <label for="carrier-name">Your name</label>
+              <input id="carrier-name" name="carrierName" type="text" autocomplete="name" required />
+              <p class="error-message" id="carrier-name-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="wife-name">Wife's name</label>
+              <input id="wife-name" name="wifeName" type="text" autocomplete="off" required />
+              <p class="error-message" id="wife-name-error"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="wife-height">Wife's height</label>
+                <div class="input-with-unit">
+                  <input id="wife-height" name="wifeHeight" type="number" min="36" max="96" inputmode="decimal" required />
+                  <span>in</span>
+                </div>
+                <p class="error-message" id="wife-height-error"></p>
+              </div>
+
+              <div class="field">
+                <label for="wife-weight">Wife's weight</label>
+                <div class="input-with-unit">
+                  <input id="wife-weight" name="wifeWeight" type="number" min="50" max="500" inputmode="decimal" required />
+                  <span>lb</span>
+                </div>
+                <p class="error-message" id="wife-weight-error"></p>
+              </div>
+            </div>
+
+            <button type="submit" class="primary-action">Register team</button>
+            <p class="success-message" id="success-message" role="status"></p>
+          </form>
+        </section>
+
+        <aside class="description-panel" aria-labelledby="description-title">
+          <p class="eyebrow">Cold Spring Park</p>
+          <h2 id="description-title">Mother's Day Wife Carry</h2>
+          <div class="description-copy">
+            <p>
+              Folks, it's happening. The Cold Spring Park Wife Carry for Mother's Day.
+              Tremendous event. Maybe the greatest soccer team event of all time --
+              people are saying that. Strong husbands, incredible wives,
+              unbelievable athleticism. Nobody carries wives like this team, nobody.
+            </p>
+            <p>
+              We're talking obstacles, speed, balance, determination. Total chaos in
+              the best possible way. Some people train for marathons -- our guys
+              train to carry their wives through mud and grass while trying not to
+              collapse. Very high-level competition. Very serious.
+            </p>
+            <p>
+              Come out to Cold Spring Park and watch the moms get the appreciation
+              they deserve -- and watch the dads completely gas themselves after 40
+              yards. It's going to be fun, loud, competitive, and frankly, beautiful.
+            </p>
+            <p>
+              Happy Mother's Day to all the amazing moms. We love the moms. The best
+              people. See you at the race.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="about-band" aria-label="About the race">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2>Conquer the course</h2>
+        </div>
+        <p>
+          Teams run over dry obstacles and a water hazard. The
+          fastest teams move toward the final heat, with bragging rights and
+          race-day prizes on the line.
+        </p>
+      </section>
+
+      <section class="prize-band" aria-label="Prize highlights">
+        <article>
+          <span>1st place</span>
+          <strong>Wife's weight in beer</strong>
+        </article>
+        <article>
+          <span>Cash prize</span>
+          <strong>5x her weight</strong>
+        </article>
+        <article>
+          <span>Bonus awards</span>
+          <strong>Best dressed and more</strong>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="brand-mark" aria-hidden="true">WC</span>
+        <span>Wife Carry Registration</span>
+      </div>
+      <a href="#registration">Back to registration</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
